@@ -4,8 +4,8 @@ import './styles/index.css';
 import App from './components/App';
 import registerServiceWorker from './registerServiceWorker';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
-import {Provider} from 'react-redux';
-import {createStore, applyMiddleware, compose} from 'redux';
+import { Provider } from 'react-redux';
+import { createStore, applyMiddleware, compose } from 'redux';
 import reduxThunk from 'redux-thunk';
 import reducer from './reducer';
 
@@ -22,9 +22,9 @@ ReactDOM.render((
           <BaseLayout>
             <Switch>
               <Route exact path="/" component={App} />
-              <Route path="/login" component={Login} />
-              <Route path="/register" component={Register} />
-              <Route path="/dashboard" component={Dashboard} />
+              <Route path="/Login" component={Login} />
+              <Route path="/Register" component={Register} />
+              <Route path="/Dashboard" component={Dashboard} />
             </Switch>
           </BaseLayout>
         </BrowserRouter>
